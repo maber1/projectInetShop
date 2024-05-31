@@ -1,0 +1,24 @@
+.layout {
+  min-height: 100vh;
+}
+
+.content {
+  width: 100%;
+  max-width: 1400px;
+  padding: 30px 15px;
+  margin: 0 auto;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  line-height: unset;
+  padding: 0 15px;
+  border-bottom: 1px solid rgba(253, 253, 253, 0.12);
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}

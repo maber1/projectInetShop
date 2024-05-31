@@ -1,0 +1,86 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "commonjs": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/jsx-runtime", // позволяет не импортировать реакт
+    "plugin:react-hooks/recommended", //поддержка хуков
+    "plugin:import/recommended", // подсказки при импорте
+//    "airbnb",
+    "prettier", // отключает конфликты с prettier
+    "plugin:prettier/recommended",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript"
+  ],
+  "overrides": [],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "project": "./tsconfig.json"
+//    "tsconfigRootDir": "./"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "indent": [2, 2],
+    "brace-style": [2, "1tbs"],
+    "quotes": [2, "single"],
+    "no-console": 0,
+    "no-shadow": 0,
+    "no-use-before-define": [2, "nofunc"],
+    "no-constant-condition": 0,
+    "space-after-function-name": 0,
+    "consistent-return": 0,
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/triple-slash-reference": "error",
+    "react/jsx-uses-vars": "error",
+    "react/jsx-uses-react": "error",
+    "@typescript-eslint/no-explicit-any": "off",
+    "react/jsx-filename-extension": [
+      1,
+      { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+    ],
+    "no-underscore-dangle":  "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+//      "alias": {
+//        "map": [
+//          ["@components", "./src/components"],
+//          ["@icons", "./src/icons"],
+//          ["@utils", "./src/utils"]
+//        ],
+//        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+//      }
+    }
+  }
+}

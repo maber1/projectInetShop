@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "target": "ES2015",
+    "module": "esnext",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "downlevelIteration": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "jsx": "react",
+    "baseUrl": "src",
+    "paths": {
+      "@component/*": [
+        "src/components/*"
+      ],
+      "@src/*": [
+        "src/*"
+      ]
+    }
+  },
+  "include": [
+    "custom.d.ts",
+    "src/**/*"
+  ],
+  "exclude": [
+    "static",
+    "build",
+    "dist",
+    "node_modules"
+  ]
+}

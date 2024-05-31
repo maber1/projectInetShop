@@ -1,0 +1,51 @@
+.card {
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 260px;
+  border: 1px solid #ededed;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px -1px;
+  }
+
+  &__photo {
+    height: 238px;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    margin-bottom: 10px;
+    min-height: 125px;
+  }
+
+  .price, .oldPrice {
+    text-align: right;
+    display: block;
+  }
+
+  .price, .oldPrice {
+    font-size: 24px;
+  }
+
+  .oldPrice {
+    font-size: 18px;
+    text-decoration: line-through;
+    color: #aeaeae;
+    // margin-bottom: 10px;
+  }
+
+  &__footer {
+
+    >:last-child {
+      margin-top: 10px;
+    }
+  }
+}
