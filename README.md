@@ -6,3 +6,5 @@
 - mobx(MST)
 - eslint
 - prettier
+
+https://otus.makarovav.ru/
